@@ -5,7 +5,7 @@ server "linode", :web, :app, :db, primary: true
 set :application, "braindump"
 set :shared_assets, %w{public/uploads}
 set :user, "deployer"
-set :deploy_to, "/u/apps/#{application}"
+set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
