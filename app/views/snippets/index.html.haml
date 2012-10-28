@@ -10,7 +10,7 @@
 
   - @snippets.each do |snippet|
     %tr
-      %td= snippet.code
+      %td= markdown snippet.code
       %td= snippet.description
       %td= link_to 'Show', snippet
       %td= link_to 'Edit', edit_snippet_path(snippet)

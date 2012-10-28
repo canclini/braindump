@@ -1,12 +1,8 @@
-%p#notice= notice
-
 %p
   %b Code:
-  = @snippet.code
+  = raw Pygments.highlight(@snippet.code, :lexer => 'ruby')
 %p
   %b Description:
-  = @snippet.description
+  = markdown @snippet.description
 
 = link_to 'Edit', edit_snippet_path(@snippet)
-\|
-= link_to 'Back', snippets_path

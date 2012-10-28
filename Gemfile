@@ -8,6 +8,7 @@ gem 'json'
 gem 'haml'
 gem 'haml-rails'
 gem 'redcarpet'
+gem 'pygments.rb'
 
 group :production do
   gem 'pg'
