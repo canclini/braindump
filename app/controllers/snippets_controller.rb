@@ -2,7 +2,11 @@ class SnippetsController < ApplicationController
   # GET /snippets
   # GET /snippets.json
   def index
-    @snippets = Snippet.all
+    if params[:tag]
+      @snippets = Snippet.tagged_with(params[:tag])
+    else
+      @snippets = Snippet.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

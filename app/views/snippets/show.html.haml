@@ -1,4 +1,7 @@
 %p
+  %b Tags:
+  = @snippet.tag_list
+%p
   %b Code:
   = raw Pygments.highlight(@snippet.code, :lexer => @snippet.language)
 %p

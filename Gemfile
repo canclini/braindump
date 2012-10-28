@@ -9,6 +9,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'redcarpet'
 gem 'pygments.rb'
+gem 'acts-as-taggable-on'
 
 group :production do
   gem 'pg'

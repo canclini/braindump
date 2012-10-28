@@ -1,5 +1,6 @@
 class Snippet < ActiveRecord::Base
-  attr_accessible :code, :description, :language
+  acts_as_taggable
+  attr_accessible :code, :description, :language, :tag_list
   validates_presence_of :code, :description, :language
 
   LANGUAGES = %w[ruby bash css html haml scss erb]

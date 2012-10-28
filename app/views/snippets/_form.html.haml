@@ -9,6 +9,9 @@
   .field
     = f.label :language
     = f.select :language, @languages
+  .field
+    = f.label :tag_list, "Tags (separated by commas)"
+    = f.text_field :tag_list
 
   .field
     = f.label :code

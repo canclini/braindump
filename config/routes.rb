@@ -1,6 +1,8 @@
 Braindump::Application.routes.draw do
   resources :snippets
 
+  get 'tags/:tag', to: 'snippets#index', as: :tag
+
   root :to => 'snippets#index'
 
   # The priority is based upon order of creation:
