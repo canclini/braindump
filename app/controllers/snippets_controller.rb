@@ -25,6 +25,7 @@ class SnippetsController < ApplicationController
   # GET /snippets/new.json
   def new
     @snippet = Snippet.new
+    @languages = Snippet::LANGUAGES
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class SnippetsController < ApplicationController
   # GET /snippets/1/edit
   def edit
     @snippet = Snippet.find(params[:id])
+    @languages = Snippet::LANGUAGES
   end
 
   # POST /snippets

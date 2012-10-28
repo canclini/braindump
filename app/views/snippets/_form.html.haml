@@ -7,6 +7,10 @@
           %li= msg
 
   .field
+    = f.label :language
+    = f.select :language, @languages
+
+  .field
     = f.label :code
     = f.text_area :code, :rows => 10
   .field

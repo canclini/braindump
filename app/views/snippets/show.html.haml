@@ -1,6 +1,6 @@
 %p
   %b Code:
-  = raw Pygments.highlight(@snippet.code, :lexer => 'ruby')
+  = raw Pygments.highlight(@snippet.code, :lexer => @snippet.language)
 %p
   %b Description:
   = markdown @snippet.description
