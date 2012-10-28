@@ -87,6 +87,10 @@ GEM
       net-ssh (>= 1.99.1)
     pg (0.14.1)
     polyglot (0.3.3)
+    posix-spawn (0.3.6)
+    pygments.rb (0.3.2)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -139,6 +143,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    yajl-ruby (1.1.0)
     zurb-foundation (3.2.0)
       compass (>= 0.12.2)
       modular-scale (>= 1.0.2)
@@ -157,6 +162,7 @@ DEPENDENCIES
   jquery-rails
   json
   pg
+  pygments.rb
   rails (= 3.2.8)
   redcarpet
   sass-rails (~> 3.2.3)
