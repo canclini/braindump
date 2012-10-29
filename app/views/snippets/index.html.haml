@@ -1,5 +1,11 @@
 %h1 Listing snippets
 
+.row
+  =form_tag snippets_path, :method => :get do
+    %p.six.columns
+      = text_field_tag :search, params[:search]
+      = submit_tag "Search", :name => nil
+
 #tag_cloud
   -tag_cloud Snippet.tag_counts, %w[s m l] do |tag, css_class|
     = link_to tag.name, tag_path(tag.name), class: css_class

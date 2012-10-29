@@ -10,6 +10,8 @@ gem 'haml-rails'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem 'acts-as-taggable-on'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 group :production do
   gem 'pg'

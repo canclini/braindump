@@ -4,4 +4,8 @@ class Snippet < ActiveRecord::Base
   validates_presence_of :code, :description, :language
 
   LANGUAGES = %w[ruby bash css html haml scss erb]
+
+  searchable do
+    text :code, :description
+  end
 end

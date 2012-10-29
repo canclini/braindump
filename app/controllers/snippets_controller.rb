@@ -8,6 +8,12 @@ class SnippetsController < ApplicationController
       @snippets = Snippet.all
     end
 
+    @search = Snippet.search do
+      fulltext params[:search]
+    end
+
+    @snippets = @search.results
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @snippets }
